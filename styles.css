@@ -7,16 +7,26 @@ body {
   margin: 0;
   padding: 0;
   text-align: center;
-  font-family: 'Roboto', sans-serif;
   color: #222;
-  background: #f7f5f0;
+  background: white;
 }
+
+/* Global Text Styles */
+
+p {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  letter-spacing: 1px;
+  font-size: 14px;
+}
+
 /* Link Styles */
 
 a {
   text-decoration: none;
-  color: #999;
+  color: #000;
 }
+
 a:hover {
   color: #6633ff;
 }
@@ -25,25 +35,29 @@ a:hover {
 
 .main-nav {
   width: 100%;
-  background: black;
+  background: rgba(255, 255, 255, 0.822);
   min-height: 30px;
   padding: 10px;
   position: fixed;
   text-align: center;
 }
+
 .nav {
   display: flex;
   justify-content: space-around;
-  font-weight: 700;
   list-style-type: none;
   margin: 0 auto;
   padding: 0;
+  font-family: 'Passion One';
+  Text-transform: uppercase;
+  font-size: 19px;
+  
+
 }
 
 .nav .name {
     display: block;
     margin-right: auto;
-    color: white;
 }
 .nav li {
   padding: 5px 10px 10px 10px;
@@ -52,54 +66,108 @@ a:hover {
   transition: all .5s;
 }
 .nav a:hover {
-  color: white
+  color: #FF0042;
+}
+
+.nav .icon {
+  width: 150px;
 }
 
 header {
   text-align: center;
-  background: url('images/portland.jpg') no-repeat top center ;
   background-size: cover;
   overflow: hidden;
   padding-top: 60px;
+   /* background-image: url("/images/code.jpg"); */
+  background-color: white;
 }
+
 header {
   line-height: 1.5;
 }
 header .profile-image {
   margin-top: 50px;
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  border: 3px solid white;
+  width: 80px;
+  height: 80px;
   transition: all .5s;
 }
 header .profile-image:hover {
-  transform: scale(1.2) rotate(5deg);
+  transform: scale(1.2);
 }
+
+.logo-container {
+  margin-top: 10%;
+
+}
+
+.logo {
+  width: 30%;
+
+}
+
 .tag {
-  background-color: #efefef;
   color: black;
-  padding: 10px;
   border-radius: 5px;
-  display: table;
-  margin: 10px auto;
+  margin: 30px auto;
+  letter-spacing: 1px;
+  font-size: 14px;
+
 } 
-.location {
-  background-color: #222;
-  color: yellow;
+
+.hello {
+  margin-top: 15%;
+  max-width: 1100px;
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;  
+  }
+
+
+.tag.name {
+  font-size: 25px;
+  letter-spacing: 0px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+
 }
+
+.welcome {
+
+  font-size: 16px;
+}
+.location {
+  background-color: rgba(34, 34, 34, 0);
+  color: #3d3d3d;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+
+}
+
+
 .card {
-  margin: 30px;
+  margin: 60px 30px 30px 30px;
   padding: 20px 40px 40px;
   max-width: 500px;
-  text-align: left;
+  text-align: center;
   background: #fff;
-  border-bottom: 4px solid #ccc;
-  border-radius: 6px;
-  transition: all .5s;
+  border-bottom: 1px solid white;
+  border-top: 1px solid #FF0042;
+  border-radius: 0;
+  transition: all .7s;
+}
+
+.card h2 {
+  font-family: 'Anton', sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 .card:hover {
-  border-color: #ff99ff;
+  border-bottom: 1px solid #FF0042;
+  border-top: 1px solid #fff;
+  transition: all .7s;
+
 }
 
 ul.skills {
@@ -128,7 +196,9 @@ footer {
 
 footer .copyright {
   top: -8px;
-  font-size: .75em;
+  font-size: 11px;
+  font-family: 'Raleway';
+  text-transform: uppercase;
 }
 
 footer ul {
@@ -137,6 +207,10 @@ footer ul {
   padding: 0;
 }
 
+#footer-icon {
+  width: 50px;
+  padding-top: 10px;
+}
 footer ul li {
   display: inline-block;
 }
@@ -191,6 +265,7 @@ a.social:hover {
 
   main {
     padding-top: 20px;
+    
   }
 
   main p {
