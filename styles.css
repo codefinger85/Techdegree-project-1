@@ -28,10 +28,10 @@ a {
 }
 
 a:hover {
-  color: #6633ff;
+  color: #FF0042;;
 }
 
-/* Section Styles */
+/* Navigation Styles */
 
 .main-nav {
   width: 100%;
@@ -48,23 +48,24 @@ a:hover {
   list-style-type: none;
   margin: 0 auto;
   padding: 0;
-  font-family: 'Passion One';
+  font-family: 'Passion One', 'Sans serif';
   Text-transform: uppercase;
   font-size: 19px;
-  
-
 }
 
 .nav .name {
     display: block;
     margin-right: auto;
 }
+
 .nav li {
   padding: 5px 10px 10px 10px;
 }
+
 .nav a {
   transition: all .5s;
 }
+
 .nav a:hover {
   color: #FF0042;
 }
@@ -73,6 +74,12 @@ a:hover {
   width: 150px;
 }
 
+.current-page {
+  color: #FF0042;
+}
+
+/* header styles */
+
 header {
   text-align: center;
   background-size: cover;
@@ -80,29 +87,38 @@ header {
   padding-top: 60px;
    /* background-image: url("/images/code.jpg"); */
   background-color: white;
-}
-
-header {
   line-height: 1.5;
-}
+ }
+
 header .profile-image {
   margin-top: 50px;
   width: 80px;
   height: 80px;
   transition: all .5s;
 }
+
 header .profile-image:hover {
   transform: scale(1.2);
 }
 
 .logo-container {
   margin-top: 10%;
-
 }
 
 .logo {
-  width: 30%;
+  width: 35%;
+}
 
+.logo-experience {
+  width: 30%;
+}
+
+.logo-profile {
+  width: 22%;
+}
+
+.logo-contact {
+  width: 24%;
 }
 
 .tag {
@@ -111,7 +127,6 @@ header .profile-image:hover {
   margin: 30px auto;
   letter-spacing: 1px;
   font-size: 14px;
-
 } 
 
 .hello {
@@ -129,21 +144,20 @@ header .profile-image:hover {
   font-family: 'Raleway', sans-serif;
   font-weight: 400;
   text-transform: uppercase;
-
 }
 
 .welcome {
-
   font-size: 16px;
 }
+
 .location {
   background-color: rgba(34, 34, 34, 0);
   color: #3d3d3d;
   letter-spacing: 4px;
   text-transform: uppercase;
-
 }
 
+/* Cards Styles */
 
 .card {
   margin: 60px 30px 30px 30px;
@@ -158,35 +172,97 @@ header .profile-image:hover {
 }
 
 .card h2 {
-  font-family: 'Anton', sans-serif;
+  font-family: 'Passion One', sans-serif;
   text-align: center;
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 0px;
+  Font-size: 28px;
 }
-.card:hover {
+
+.home-card:hover {
   border-bottom: 1px solid #FF0042;
-  border-top: 1px solid #fff;
+  border-top: 1px solid #ffffff;
   transition: all .7s;
-
 }
 
-ul.skills {
-  padding: 0;
-  text-align: center;
+.experience-card {
+  max-width: 1100px;
 }
 
-.skills li {
-  border-radius: 6px;
-  display: inline-block;
-  background: #ff9904;
-  color: white;
-  padding: 5px 10px;
-  margin: 2px;
+/* Skill Image styles */
+
+.skills-container {
+  margin: 40px 0;
 }
 
-.skills li:nth-child(odd) {
-  background: #0399ff;
+.skills-container img {
+  width: 15%;
+  margin: 0 10px;
 }
+
+.html-img {
+  transition: all .5s;
+  border-radius: 50%; 
+}
+
+.html-img:hover {
+  transform: scale(1.2);
+  transition: all .5s;
+  /* box-shadow: 1px 1px 15px #cfcfcf8c; */
+  border-radius: 50%;  
+}
+
+.css-img {
+  transition: all .5s;
+  border-radius: 50%; 
+}
+
+.css-img:hover {
+  transform: scale(1.2);
+  transition: all .5s;
+  /* box-shadow: 1px 1px 15px #cfcfcf8c; */
+  border-radius: 50%;  
+}
+
+.js-img {
+  transition: all .5s;
+  border-radius: 50%; 
+}
+
+.js-img:hover {
+  transform: scale(1.2);
+  transition: all .5s;
+  /* box-shadow: 1px 1px 15px #cfcfcf8c; */
+  border-radius: 50%;  
+}
+
+.react-img {
+  transition: all .5s;
+  border-radius: 50%; 
+}
+
+.react-img:hover {
+  transform: scale(1.2);
+  transition: all .5s;
+  /* box-shadow: 1px 1px 15px #cfcfcf8c; */
+  border-radius: 50%;  
+}
+
+.node-img {
+  transition: all .5s;
+  border-radius: 50%; 
+}
+
+.node-img:hover {
+  transform: scale(1.2);
+  transition: all .5s;
+  /* box-shadow: 1px 1px 15px #cfcfcf8c; */
+  border-radius: 50%;   
+}
+
+
+
+/* Footer Styles */
 
 footer {
   width: 100%;
@@ -211,6 +287,7 @@ footer ul {
   width: 50px;
   padding-top: 10px;
 }
+
 footer ul li {
   display: inline-block;
 }
@@ -225,23 +302,29 @@ a.social {
   opacity: .4;
   transition: all .5s;
 }
+
 a.twitter {
   background-image: url(images/twitter.svg);
 }
+
 a.linkedin {
   background-image: url(images/linkedin.svg);
 }
+
 a.github {
   background-image: url(images/github.svg);
 }
+
 a.social:hover {
   opacity: 1;
 }
+
 .clearfix {
   clear: both;
 }
 
 /* Styles for larger screens */
+
 @media screen and (min-width: 720px) {
   
   .flex {
