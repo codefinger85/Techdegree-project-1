@@ -1,4 +1,6 @@
 /* Global Layout Set-up */
+
+
 * { 
   box-sizing: border-box;
 }
@@ -11,16 +13,22 @@ body {
   background: white;
 }
 
+
 /* Global Text Styles */
 
+
 p {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 400;
-  letter-spacing: 1px;
-  font-size: 14px;
+  font-family: 'muli', sans-serif;
+  font-weight: 800;
+  letter-spacing: 0px;
+  font-size: 13px;
+  text-transform: capitalize;
+  line-height: 2;
 }
 
+
 /* Link Styles */
+
 
 a {
   text-decoration: none;
@@ -31,7 +39,9 @@ a:hover {
   color: #FF0042;;
 }
 
+
 /* Navigation Styles */
+
 
 .main-nav {
   width: 100%;
@@ -48,7 +58,7 @@ a:hover {
   list-style-type: none;
   margin: 0 auto;
   padding: 0;
-  font-family: 'Passion One', 'Sans serif';
+  font-family: 'Passion one', 'Sans serif';
   Text-transform: uppercase;
   font-size: 19px;
 }
@@ -78,7 +88,9 @@ a:hover {
   color: #FF0042;
 }
 
+
 /* header styles */
+
 
 header {
   text-align: center;
@@ -106,7 +118,7 @@ header .profile-image:hover {
 }
 
 .logo {
-  width: 35%;
+  width: 32%;
 }
 
 .logo-experience {
@@ -131,33 +143,118 @@ header .profile-image:hover {
 
 .hello {
   margin-top: 15%;
-  max-width: 1100px;
+  max-width: 600px;
   text-align: left;
-  margin-left: auto;
-  margin-right: auto;  
+  margin-left: 15%;
   }
 
+  .hello2 {
+    margin-top: 1%;
+    max-width: 600px;
+    text-align: right;
+    margin-right: 15%;
+    float: right;
+    }
 
 .tag.name {
-  font-size: 25px;
+  font-size: 18px;
   letter-spacing: 0px;
-  font-family: 'Raleway', sans-serif;
+  /* font-family: 'Raleway:400', sans-serif; */
+  font-family: 'PT Sans', sans-serif;
   font-weight: 400;
   text-transform: uppercase;
+  color: #ff0042;
 }
 
-.welcome {
-  font-size: 16px;
+.tag.name.curl {
+  margin-top: none;
 }
 
-.location {
-  background-color: rgba(34, 34, 34, 0);
-  color: #3d3d3d;
-  letter-spacing: 4px;
+/* Contact Form */
+
+.contact-form {
+  font-family: 'muli', 'Sans Serif';
+  font-weight: 800;
+  font-size: 13px;
+  color: #000;
+  text-transform: capitalize;
+  width: 400px;
+}
+
+.contact-form input {
+  width: 100%;
+  height: 30px;
+  margin-top: 10px;
+  border: 1px solid #dddddd;
+  border-radius: 2px;
+  font-family: 'muli', 'Sans Serif';
+  font-size: 13px;
+  font-weight: 400;
+  padding-left: 5px;
+}
+
+input:focus {
+  -webkit-box-shadow: none;
+  outline: -webkit-focus-ring-color auto 0px;
+  box-shadow: 0px 0px 5px #ff0044ab;
+  border: 1px solid rgba(255, 0, 68, 0.589);
+}
+
+#name-field {
+  margin-bottom: 20px;
+}
+
+#email-field {
+  margin-bottom: 20px;
+}
+
+#message-field {
+  margin-bottom: 20px;
+  margin-top: 10px;
+  height: 100px;
+  width: 100%;
+  border: 1px solid #dddddd;
+  border-radius: 2px;
+  font-family: 'muli', 'Sans Serif';
+  font-size: 13px;
+  font-weight: 400;
+  padding-left: 5px;
+  resize: none;
+}
+
+#message-field:focus {
+  -webkit-box-shadow: none;
+  outline: -webkit-focus-ring-color auto 0px;
+  box-shadow: 0px 0px 5px #ff0044ab;
+  border: 1px solid rgba(255, 0, 68, 0.589);
+}
+
+.contact-form button {
+  width: 100%;
+  height: 40px;
+  margin-top: 10px;
+  background-color: #fff;;
+  color: #000;
+  Font-family: 'PT Sans', 'Sans Serif';
+  font-weight: 400;
+  Font-size: 15px;
   text-transform: uppercase;
+  border: none;
+  border-radius: 2px;
+  transition: all .6s;
+
 }
+
+.contact-form button:hover {
+  background-color: #ff0042;
+  color: #fff;
+  transition: all .6s;
+}
+
+
 
 /* Cards Styles */
+
 
 .card {
   margin: 60px 30px 30px 30px;
@@ -189,7 +286,9 @@ header .profile-image:hover {
   max-width: 1100px;
 }
 
+
 /* Skill Image styles */
+
 
 .skills-container {
   margin: 40px 0;
@@ -209,7 +308,8 @@ header .profile-image:hover {
   transform: scale(1.2);
   transition: all .5s;
   /* box-shadow: 1px 1px 15px #cfcfcf8c; */
-  border-radius: 50%;  
+  border-radius: 50%; 
+  opacity: 0.5; 
 }
 
 .css-img {
@@ -273,8 +373,9 @@ footer {
 footer .copyright {
   top: -8px;
   font-size: 11px;
-  font-family: 'Raleway';
+  font-family: 'PT Sans';
   text-transform: uppercase;
+  font-weight: 400;
 }
 
 footer ul {
@@ -296,11 +397,10 @@ a.social {
   display: inline-block;
   text-indent: -9999px;
   margin-left: 5px;
-  width: 30px;
-  height: 30px;
-  background-size: 30px 30px;
-  opacity: .4;
+  width: 25px;
+  height: 25px;
   transition: all .5s;
+  opacity: 1;
 }
 
 a.twitter {
@@ -313,10 +413,11 @@ a.linkedin {
 
 a.github {
   background-image: url(images/github.svg);
+  color: red;
 }
 
 a.social:hover {
-  opacity: 1;
+  opacity: .4;
 }
 
 .clearfix {
