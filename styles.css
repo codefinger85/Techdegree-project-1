@@ -102,17 +102,6 @@ header {
   line-height: 1.5;
  }
 
-header .profile-image {
-  margin-top: 50px;
-  width: 80px;
-  height: 80px;
-  transition: all .5s;
-}
-
-header .profile-image:hover {
-  transform: scale(1.2);
-}
-
 .logo-container {
   margin-top: 10%;
 }
@@ -168,6 +157,12 @@ header .profile-image:hover {
 
 .tag.name.curl {
   margin-top: none;
+}
+
+.experience-section {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 /* Contact Form */
@@ -257,14 +252,12 @@ input:focus {
 
 
 .card {
-  margin: 60px 30px 30px 30px;
+  margin: 10px 30px 30px 30px;
   padding: 20px 40px 40px;
   max-width: 500px;
   text-align: center;
   background: #fff;
   border-bottom: 1px solid white;
-  border-top: 1px solid #FF0042;
-  border-radius: 0;
   transition: all .7s;
 }
 
@@ -274,12 +267,6 @@ input:focus {
   text-transform: uppercase;
   letter-spacing: 0px;
   Font-size: 28px;
-}
-
-.home-card:hover {
-  border-bottom: 1px solid #FF0042;
-  border-top: 1px solid #ffffff;
-  transition: all .7s;
 }
 
 .experience-card {
@@ -321,7 +308,9 @@ input:focus {
   transform: scale(1.2);
   transition: all .5s;
   /* box-shadow: 1px 1px 15px #cfcfcf8c; */
-  border-radius: 50%;  
+  border-radius: 50%;
+  opacity: 0.5; 
+  
 }
 
 .js-img {
@@ -333,7 +322,9 @@ input:focus {
   transform: scale(1.2);
   transition: all .5s;
   /* box-shadow: 1px 1px 15px #cfcfcf8c; */
-  border-radius: 50%;  
+  border-radius: 50%;
+  opacity: 0.5; 
+  
 }
 
 .react-img {
@@ -345,7 +336,9 @@ input:focus {
   transform: scale(1.2);
   transition: all .5s;
   /* box-shadow: 1px 1px 15px #cfcfcf8c; */
-  border-radius: 50%;  
+  border-radius: 50%;
+  opacity: 0.5; 
+  
 }
 
 .node-img {
@@ -357,7 +350,9 @@ input:focus {
   transform: scale(1.2);
   transition: all .5s;
   /* box-shadow: 1px 1px 15px #cfcfcf8c; */
-  border-radius: 50%;   
+  border-radius: 50%; 
+  opacity: 0.5; 
+  
 }
 
 
@@ -366,8 +361,8 @@ input:focus {
 
 footer {
   width: 100%;
-  min-height: 30px;
-  padding: 20px 0 40px 20px;
+  min-height: 30px; 
+  display: block;
 }
 
 footer .copyright {
@@ -380,7 +375,7 @@ footer .copyright {
 
 footer ul {
   list-style-type: none;
-  margin: 0;
+  margin-top: 10%;
   padding: 0;
 }
 
@@ -420,7 +415,9 @@ a.social:hover {
   opacity: .4;
 }
 
-.clearfix {
+.clearfix::after {
+  content:"";
+  display: table;
   clear: both;
 }
 
